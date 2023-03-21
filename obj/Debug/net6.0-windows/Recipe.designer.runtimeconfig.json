@@ -12,10 +12,11 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\Elena\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Elena\\.nuget\\packages"
+      "C:\\Users\\Birb\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Birb\\.nuget\\packages"
     ],
     "configProperties": {
+      "System.Reflection.NullabilityInfoContext.IsSupported": true,
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
     }
   }
