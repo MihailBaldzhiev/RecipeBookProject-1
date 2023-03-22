@@ -18,6 +18,17 @@ namespace Recipe.Data
             return recipeContext.Recipes.ToList();
         }
 
+        public RecipeModel Get(string text)
+        {
+            RecipeModel result = GetAll().Find(x => x.Name.Contains(text));
+            if (result == null)
+            {
+                throw new ArgumentNullException();
+            }
+            return result;
+
+        }
+
         public void Add(RecipeModel recipe)
         {
             recipeContext.Recipes.Add(recipe);

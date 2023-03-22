@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Birb\\Source\\Repos\\RecipeBookProject-1\\Recipe.csproj": {}
+    "C:\\Users\\Birb\\source\\repos\\RecipeBookProject-1\\Recipe.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Birb\\Source\\Repos\\RecipeBookProject-1\\Recipe.csproj": {
+    "C:\\Users\\Birb\\source\\repos\\RecipeBookProject-1\\Recipe.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Birb\\Source\\Repos\\RecipeBookProject-1\\Recipe.csproj",
+        "projectUniqueName": "C:\\Users\\Birb\\source\\repos\\RecipeBookProject-1\\Recipe.csproj",
         "projectName": "Recipe",
-        "projectPath": "C:\\Users\\Birb\\Source\\Repos\\RecipeBookProject-1\\Recipe.csproj",
+        "projectPath": "C:\\Users\\Birb\\source\\repos\\RecipeBookProject-1\\Recipe.csproj",
         "packagesPath": "C:\\Users\\Birb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Birb\\Source\\Repos\\RecipeBookProject-1\\obj\\",
+        "outputPath": "C:\\Users\\Birb\\source\\repos\\RecipeBookProject-1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Birb\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -59,6 +59,8 @@
               "version": "[7.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.4, )"
             },
