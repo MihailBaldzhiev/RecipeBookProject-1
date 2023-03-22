@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Recipe.Data;
+using Recipe.Models;
 
 namespace Recipe
 {
@@ -16,6 +18,9 @@ namespace Recipe
         private int lastLabelY = 10;
         private Dictionary<string, string> recipeData = new Dictionary<string, string>();
         private Panel recipePanel;
+
+        private static RecipeContext recipeContext = new RecipeContext();
+        RecipeLogic recipeLogic = new RecipeLogic(recipeContext);
         public Recipes()
         {
             InitializeComponent();
@@ -162,7 +167,16 @@ namespace Recipe
             lastLabelY += recipeLabel.Height + 10;
 
             // Store the recipe title and ingredients in the dictionary
-            recipeData.Add(RecipeTitle.Text, Instructions.Text);
+            //recipeData.Add(RecipeTitle.Text, Instructions.Text);
+
+            RecipeModel recipe = new RecipeModel();
+            recipe.Name = RecipeTitle.Text;
+            recipe.TimeRequired = int.Parse(TimeRequired.Text);
+            recipe.Instructions = Instructions.Text;
+            //implement author functionality
+            recipe.Author = "Not implemented!";
+            recipeLogic.Add(recipe);
+
 
             // Clear the TextBoxes
             RecipeTitle.Text = "";
@@ -241,6 +255,61 @@ namespace Recipe
         private void label3_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void tabPage1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RecipeTitle_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TimeRequired_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPublish_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var recipes = recipeLogic.GetAll();
+
+            if (recipes == null)
+            {
+                listBox1.Items.Add("No recipes.");
+            }
+            else
+            {
+                foreach (var item in recipes)
+                {
+                    listBox1.Items.Add(item.Id + item.Name + item.Author);
+                }
+            }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+            var recipes = recipeLogic.GetAll();
+
+            if (recipes == null)
+            {
+                listBox1.Items.Add("No recipes.");
+            }
+            else
+            {
+                foreach (var item in recipes)
+                {
+                    listBox1.Items.Add(item.Id + item.Name + item.Author);
+                }
+            }
         }
     }
 }

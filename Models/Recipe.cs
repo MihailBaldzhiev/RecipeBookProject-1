@@ -8,5 +8,6 @@ namespace Recipe.Models
         public string Name { get; set; }
         public string Instructions { get; set; }
         public int TimeRequired { get; set; }
+        public string Author { get; set; }
     }
 }
