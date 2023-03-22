@@ -81,7 +81,7 @@
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
-          "lib/net6.0/Humanizer.dll": {}
+          "lib/net6.0/_._": {}
         },
         "runtime": {
           "lib/net6.0/Humanizer.dll": {}
@@ -296,7 +296,7 @@
           "System.Text.Json": "7.0.0"
         },
         "compile": {
-          "lib/net6.0/Microsoft.Extensions.DependencyModel.dll": {}
+          "lib/net6.0/_._": {}
         },
         "runtime": {
           "lib/net6.0/Microsoft.Extensions.DependencyModel.dll": {}
@@ -431,7 +431,7 @@
           "System.CodeDom": "4.4.0"
         },
         "compile": {
-          "lib/netstandard2.0/Mono.TextTemplating.dll": {}
+          "lib/netstandard2.0/_._": {}
         },
         "runtime": {
           "lib/netstandard2.0/Mono.TextTemplating.dll": {}
@@ -815,7 +815,7 @@
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/System.Text.Encodings.Web.dll": {}
+          "lib/net6.0/_._": {}
         },
         "runtime": {
           "lib/net6.0/System.Text.Encodings.Web.dll": {}
@@ -837,7 +837,7 @@
           "System.Text.Encodings.Web": "7.0.0"
         },
         "compile": {
-          "lib/net6.0/System.Text.Json.dll": {}
+          "lib/net6.0/_._": {}
         },
         "runtime": {
           "lib/net6.0/System.Text.Json.dll": {}
@@ -3075,9 +3075,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Birb\\Source\\Repos\\RecipeBookProject-1\\Recipe.csproj",
+      "projectUniqueName": "C:\\Users\\Birb\\source\\repos\\RecipeBookProject-1\\Recipe.csproj",
       "projectName": "Recipe",
-      "projectPath": "C:\\Users\\Birb\\Source\\Repos\\RecipeBookProject-1\\Recipe.csproj",
+      "projectPath": "C:\\Users\\Birb\\source\\repos\\RecipeBookProject-1\\Recipe.csproj",
       "packagesPath": "C:\\Users\\Birb\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Birb\\Source\\Repos\\RecipeBookProject-1\\obj\\",
       "projectStyle": "PackageReference",
