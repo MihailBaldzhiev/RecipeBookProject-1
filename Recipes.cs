@@ -15,6 +15,8 @@ namespace Recipe
 {
     public partial class Recipes : Form
     {
+        public string Username { get; set; }
+
         private int lastLabelY = 10;
         private Dictionary<string, string> recipeData = new Dictionary<string, string>();
         private Panel recipePanel;
@@ -36,6 +38,8 @@ namespace Recipe
 
             // Add the Panel to the first TabPage
             tabPage1.Controls.Add(recipePanel);
+
+            AccountUsername.Text = Username;
         }
 
         private void tabPage1_Click(object sender, EventArgs e)

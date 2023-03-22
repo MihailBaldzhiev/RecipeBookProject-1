@@ -65,6 +65,7 @@ namespace Recipe
 
         private void button2_Click(object sender, EventArgs e)
         {
+
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -76,6 +77,8 @@ namespace Recipe
 
             if (dataReader.Read() == true)
             {
+                Recipes mainForm = new Recipes();
+                mainForm.Username = txtUsername.Text;
                 new Recipes().Show();
                 this.Hide();
             }
