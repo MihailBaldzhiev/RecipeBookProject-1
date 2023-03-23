@@ -24,10 +24,10 @@ namespace Recipe
         public Recipes()
         {
             InitializeComponent();
-            tabControl1.TabPages[0].Text = "Home";
-            tabControl1.TabPages[1].Text = "Add Recipe";
-            tabControl1.SizeMode = TabSizeMode.Fixed;
-            tabControl1.Multiline = false;
+            tabControl2.TabPages[0].Text = "Home";
+            tabControl2.TabPages[1].Text = "Add Recipe";
+            tabControl2.SizeMode = TabSizeMode.Fixed;
+            tabControl2.Multiline = false;
             recipePanel = new Panel
             {
                 AutoScroll = true,
@@ -35,7 +35,7 @@ namespace Recipe
             };
 
             // Add the Panel to the first TabPage
-            tabPage1.Controls.Add(recipePanel);
+            tabPage2.Controls.Add(recipePanel);
         }
 
         private void tabPage1_Click(object sender, EventArgs e)

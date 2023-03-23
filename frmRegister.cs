@@ -8,14 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using Recipe.Models;
+using Recipe.Data;
 
 namespace Recipe
 {
     public partial class frmRegister : Form
     {
-        SqlConnection connection = new SqlConnection("database = RecipeDB");
-        SqlCommand command = new SqlCommand();
-        SqlDataAdapter data = new SqlDataAdapter();
+        //SqlConnection connection = new SqlConnection("database = RecipeDB");
+        //SqlCommand command = new SqlCommand();
+        //SqlDataAdapter data = new SqlDataAdapter();
+
+        private static UserContext userContext = new UserContext();
+        UserLogic userLogic = new UserLogic(userContext);
 
         public frmRegister()
         {
@@ -35,11 +40,18 @@ namespace Recipe
             }
             else if (txtPassword.Text == txtComPassword.Text)
             {
-                connection.Open();
-                string register = "INSERT INTO users VALUES ('" + txtUsername + "', '" + txtPassword + "')";
-                command = new SqlCommand(register, connection);
-                command.ExecuteNonQuery();
-                connection.Close();
+                // connection.Open();
+                //string register = "INSERT INTO users VALUES ('" + txtUsername + "', '" + txtPassword + "')";
+                //command = new SqlCommand(register, connection);
+                //command.ExecuteNonQuery();
+                //connection.Close();
+
+                UserModel user = new UserModel();
+                user.Username = txtUsername.Text;
+                user.Password = txtPassword.Text;
+                userLogic.AddUser(user);
+
+
 
                 txtUsername.Text = "";
                 txtPassword.Text = "";

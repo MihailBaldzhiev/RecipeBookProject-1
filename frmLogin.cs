@@ -8,14 +8,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Recipe.Models;
+using Recipe.Data;
 
 namespace Recipe
 {
     public partial class frmLogin : Form
     {
-        SqlConnection connection = new SqlConnection("database = RecipeDB");
-        SqlCommand command = new SqlCommand();
-        SqlDataAdapter data = new SqlDataAdapter();
+        //SqlConnection connection = new SqlConnection("database = RecipeDB");
+        //SqlCommand command = new SqlCommand();
+        //SqlDataAdapter data = new SqlDataAdapter();
+	
+	private static UserContext userContext = new UserContext();
+	UserLogic userLogic = new UserLogic(userContext);
+
+		
         public frmLogin()
         {
             InitializeComponent();
@@ -69,12 +76,15 @@ namespace Recipe
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            connection.Open();
-            string login = "SELECT * FROM users WHERE username = '" + txtUsername.Text + "' AND password = '" + txtPassword.Text + "'";
-            command = new SqlCommand(login, connection);
-            SqlDataReader dataReader = command.ExecuteReader();
+            //connection.Open();
+            //string login = "SELECT * FROM users WHERE username = '" + txtUsername.Text + "' AND password = '" + txtPassword.Text + "'";
+            //command = new SqlCommand(login, connection);
+            //SqlDataReader dataReader = command.ExecuteReader();
 
-            if (dataReader.Read() == true)
+	    bool success = userLogic.CheckIfExists(txtUsername.Text, txtPassword.Text);
+	
+
+            if (success == true)
             {
                 new Recipes().Show();
                 this.Hide();

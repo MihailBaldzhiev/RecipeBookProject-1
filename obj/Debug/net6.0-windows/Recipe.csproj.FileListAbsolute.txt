@@ -71,14 +71,6 @@ C:\Users\Birb\Source\Repos\RecipeBookProject-1\bin\Debug\net6.0-windows\ADO.Net.
 C:\Users\Birb\Source\Repos\RecipeBookProject-1\bin\Debug\net6.0-windows\ADO.Net.Client.Annotations.dll
 C:\Users\Birb\Source\Repos\RecipeBookProject-1\bin\Debug\net6.0-windows\ADO.Net.Client.Core.dll
 C:\Users\Birb\Source\Repos\RecipeBookProject-1\bin\Debug\net6.0-windows\ADO.Net.Client.Implementation.dll
-C:\Users\Birb\Source\Repos\RecipeBookProject-1\bin\Debug\net6.0-windows\EntityFramework.SqlServer.dll
-C:\Users\Birb\Source\Repos\RecipeBookProject-1\bin\Debug\net6.0-windows\EntityFramework.dll
-C:\Users\Birb\Source\Repos\RecipeBookProject-1\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
-C:\Users\Birb\Source\Repos\RecipeBookProject-1\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
-C:\Users\Birb\Source\Repos\RecipeBookProject-1\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
-C:\Users\Birb\Source\Repos\RecipeBookProject-1\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
-C:\Users\Birb\Source\Repos\RecipeBookProject-1\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\Birb\Source\Repos\RecipeBookProject-1\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\Birb\Source\Repos\RecipeBookProject-1\obj\Debug\net6.0-windows\Recipe.csproj.AssemblyReference.cache
 C:\Users\Birb\Source\Repos\RecipeBookProject-1\obj\Debug\net6.0-windows\Recipe.frmLogin.resources
 C:\Users\Birb\Source\Repos\RecipeBookProject-1\obj\Debug\net6.0-windows\Recipe.frmRegister.resources
