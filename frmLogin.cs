@@ -18,11 +18,11 @@ namespace Recipe
         //SqlConnection connection = new SqlConnection("database = RecipeDB");
         //SqlCommand command = new SqlCommand();
         //SqlDataAdapter data = new SqlDataAdapter();
-	
-	private static UserContext userContext = new UserContext();
-	UserLogic userLogic = new UserLogic(userContext);
 
-		
+        private static UserContext userContext = new UserContext();
+        UserLogic userLogic = new UserLogic(userContext);
+        public string Username { get; set; }
+
         public frmLogin()
         {
             InitializeComponent();
@@ -81,12 +81,14 @@ namespace Recipe
             //command = new SqlCommand(login, connection);
             //SqlDataReader dataReader = command.ExecuteReader();
 
-	    bool success = userLogic.CheckIfExists(txtUsername.Text, txtPassword.Text);
-	
+            bool success = userLogic.CheckIfExists(txtUsername.Text, txtPassword.Text);
+
 
             if (success == true)
             {
-                new Recipes().Show();
+                Username = txtUsername.Text;
+                Recipes mainForm = new Recipes(Username);
+                mainForm.Show();
                 this.Hide();
             }
             else
@@ -124,6 +126,11 @@ namespace Recipe
             txtUsername.Text = "";
             txtPassword.Text = "";
             txtUsername.Focus();
+
+        }
+
+        private void frmLogin_Load_1(object sender, EventArgs e)
+        {
 
         }
     }
