@@ -24,8 +24,7 @@ namespace Recipe
         public Recipes()
         {
             InitializeComponent();
-            tabControl2.TabPages[0].Text = "Home";
-            tabControl2.TabPages[1].Text = "Add Recipe";
+
             tabControl2.SizeMode = TabSizeMode.Fixed;
             tabControl2.Multiline = false;
             recipePanel = new Panel
