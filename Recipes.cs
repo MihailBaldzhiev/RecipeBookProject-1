@@ -168,14 +168,6 @@ namespace Recipe
             // Store the recipe title and ingredients in the dictionary
             //recipeData.Add(RecipeTitle.Text, Instructions.Text);
 
-            RecipeModel recipe = new RecipeModel();
-            recipe.Name = RecipeTitle.Text;
-            recipe.TimeRequired = int.Parse(TimeRequired.Text);
-            recipe.Instructions = Instructions.Text;
-            //implement author functionality
-            recipe.Author = "Not implemented!";
-            recipeLogic.Add(recipe);
-
 
             // Clear the TextBoxes
             RecipeTitle.Text = "";
@@ -273,7 +265,13 @@ namespace Recipe
 
         private void btnPublish_Click(object sender, EventArgs e)
         {
-
+            RecipeModel recipe = new RecipeModel();
+            recipe.Name = RecipeTitle.Text;
+            recipe.TimeRequired = int.Parse(TimeRequired.Text);
+            recipe.Instructions = Instructions.Text;
+            //implement author functionality
+            recipe.Author = "Not implemented!";
+            recipeLogic.Add(recipe);
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
