@@ -17,7 +17,6 @@ namespace Recipe
 {
     public partial class Recipes : Form
     {
-        private int lastLabelY = 10;
         private Dictionary<string, string> recipeData = new Dictionary<string, string>();
         private Panel recipePanel;
 
@@ -221,6 +220,33 @@ namespace Recipe
                     listBox1.Items.Add(item.Id + item.Name + item.Author);
                 }
             }
+            //listBox1.SelectedItem = recipes;
+            Form popupForm = new Form();
+            popupForm.Text = "Recipe Details";
+            popupForm.Size = new Size(400, 400);
+            popupForm.StartPosition = FormStartPosition.CenterParent;
+
+            // Create a Label for the recipe title
+            Label titleLabel = new Label();
+            titleLabel.Text = "Title:";
+            titleLabel.AutoSize = true;
+            titleLabel.Location = new Point(10, 10);
+
+            Label titleValueLabel = new Label();
+            titleValueLabel.Text = "";
+            titleValueLabel.AutoSize = true;
+            titleValueLabel.Location = new Point(40, 10);
+           
+
+            // Add the Labels and TextBox to the popup Form
+            popupForm.Controls.Add(titleLabel);
+            popupForm.Controls.Add(titleValueLabel);
+            /*popupForm.Controls.Add(ingredientsLabel);
+            popupForm.Controls.Add(ingredientsBox);
+            popupForm.Controls.Add(timeRequiredLabel);
+            popupForm.Controls.Add(timeRequiredValueLabel);*/
+
+            popupForm.Show();
         }
     }
 }

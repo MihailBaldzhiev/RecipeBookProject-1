@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nikolay\\Source\\Repos\\RecipeBookProject-1\\Recipe.csproj": {}
+    "C:\\Users\\Nikolay\\source\\repos\\RecipeBookProject-1\\Recipe.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nikolay\\Source\\Repos\\RecipeBookProject-1\\Recipe.csproj": {
+    "C:\\Users\\Nikolay\\source\\repos\\RecipeBookProject-1\\Recipe.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nikolay\\Source\\Repos\\RecipeBookProject-1\\Recipe.csproj",
+        "projectUniqueName": "C:\\Users\\Nikolay\\source\\repos\\RecipeBookProject-1\\Recipe.csproj",
         "projectName": "Recipe",
-        "projectPath": "C:\\Users\\Nikolay\\Source\\Repos\\RecipeBookProject-1\\Recipe.csproj",
+        "projectPath": "C:\\Users\\Nikolay\\source\\repos\\RecipeBookProject-1\\Recipe.csproj",
         "packagesPath": "C:\\Users\\Nikolay\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nikolay\\Source\\Repos\\RecipeBookProject-1\\obj\\",
+        "outputPath": "C:\\Users\\Nikolay\\source\\repos\\RecipeBookProject-1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nikolay\\AppData\\Roaming\\NuGet\\NuGet.Config",
