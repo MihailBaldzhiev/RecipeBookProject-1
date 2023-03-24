@@ -199,7 +199,7 @@ namespace Recipe
             {
                 foreach (var item in recipes)
                 {
-                    listBox1.Items.Add(item.Id + item.Name + item.Author);
+                    listBox1.Items.Add(item.Name);
                 }
             }
         }
@@ -217,10 +217,14 @@ namespace Recipe
                 listBox1.Items.Clear();
                 foreach (var item in recipes)
                 {
-                    listBox1.Items.Add(item.Id + item.Name + item.Author);
+                    listBox1.Items.Add(item.Name);
                 }
             }
             //listBox1.SelectedItem = recipes;
+           
+
+            string recipeName = listBox1.GetItemText(listBox1.SelectedItem);
+            RecipeModel selectedRecipe = recipeLogic.Get(recipeName);
             Form popupForm = new Form();
             popupForm.Text = "Recipe Details";
             popupForm.Size = new Size(400, 400);
@@ -233,7 +237,7 @@ namespace Recipe
             titleLabel.Location = new Point(10, 10);
 
             Label titleValueLabel = new Label();
-            titleValueLabel.Text = "";
+            titleValueLabel.Text = selectedRecipe.Name;
             titleValueLabel.AutoSize = true;
             titleValueLabel.Location = new Point(40, 10);
            
