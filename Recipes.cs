@@ -8,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySqlX.XDevAPI;
 using Recipe.Data;
 using Recipe.Models;
 using Recipe.Utils;
@@ -163,12 +162,22 @@ namespace Recipe
             Label titleValueLabel = new Label();
             titleValueLabel.Text = selectedRecipe.Name;
             titleValueLabel.AutoSize = true;
-            titleValueLabel.Location = new Point(50, 10);
+            titleValueLabel.Location = new Point(40, 10);
 
             Label ingredientsLabel = new Label();
             ingredientsLabel.Text = "Instructions:";
             ingredientsLabel.AutoSize = true;
-            ingredientsLabel.Location = new Point(10, 40);
+            ingredientsLabel.Location = new Point(10, 70);
+
+            Label authorLabel = new Label();
+            authorLabel.Text = "Author:";
+            authorLabel.AutoSize = true;
+            authorLabel.Location = new Point(10, 40);
+
+            Label authorLabelValue = new Label();
+            authorLabelValue.Text = selectedRecipe.Author;
+            authorLabelValue.AutoSize = true;
+            authorLabelValue.Location = new Point(60, 40);
 
             Label timeRequiredLabel = new Label();
             timeRequiredLabel.Text = "Time Required:";
@@ -179,13 +188,13 @@ namespace Recipe
             Label timeRequiredValueLabel = new Label();
             timeRequiredValueLabel.Text = selectedRecipe.TimeRequired.ToString();
             timeRequiredValueLabel.AutoSize = true;
-            timeRequiredValueLabel.Location = new Point(340, 10);
+            timeRequiredValueLabel.Location = new Point(320, 10);
 
             // Create a TextBox to display the ingredients
             TextBox ingredientsBox = new TextBox();
             ingredientsBox.Multiline = true;
             ingredientsBox.ReadOnly = true;
-            ingredientsBox.Location = new Point(10, 70);
+            ingredientsBox.Location = new Point(10, 100);
             ingredientsBox.Size = new Size(360, 280);
             ingredientsBox.Text = selectedRecipe.Instructions;
 
@@ -195,6 +204,8 @@ namespace Recipe
             popupForm.Controls.Add(ingredientsBox);
             popupForm.Controls.Add(timeRequiredLabel);
             popupForm.Controls.Add(timeRequiredValueLabel);
+            popupForm.Controls.Add(authorLabel);
+            popupForm.Controls.Add(authorLabelValue);
 
             if (AccountUsername.Text == "admin" || AccountUsername.Text == selectedRecipe.Author)
             {
