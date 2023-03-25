@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GNmFbf17GoXtePu+9jjbsLVcNAQkq3YVtq6h1ZT25yvI+I3Yhq78ClufWBIybyFlNin/1TxEmgzm2eemSjXBeQ==",
+  "dgSpecHash": "GORW/dJVsyqlEKQ/Gq3H/gUSBAEzLuXMmvk553weT9EDj4jxYAyzSIQZgMezFpPN4N25mp/IbKoyoSQ5Iv/3xQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Birb\\Source\\Repos\\RecipeBookProject-1\\Recipe.csproj",
+  "projectFilePath": "C:\\Users\\Birb\\source\\repos\\RecipeBookProject-1\\Recipe.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Birb\\.nuget\\packages\\ado.net.client\\1.4.4\\ado.net.client.1.4.4.nupkg.sha512",
     "C:\\Users\\Birb\\.nuget\\packages\\ado.net.client.annotations\\1.2.0\\ado.net.client.annotations.1.2.0.nupkg.sha512",
