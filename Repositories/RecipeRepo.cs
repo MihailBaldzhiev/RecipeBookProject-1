@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Recipe.Models;
 using Recipe.Data;
+using System.Reflection.Metadata.Ecma335;
+using System.Xml.Linq;
 
 namespace Recipe.Repositories
 {
@@ -23,12 +25,7 @@ namespace Recipe.Repositories
             return recipeContext.Recipes.ToList();
         }
 
-        public RecipeModel Get(string text)
-        {
-            RecipeModel result = GetAll().Find(x => x.Name.Contains(text));
-            return result;
-
-        }
+        public RecipeModel Get(string name) => GetAll().Find(x => x.Name.Contains(name));
 
         public void Add(RecipeModel recipe)
         {
