@@ -35,38 +35,36 @@ namespace Recipe
 
         private void RegisterBtn_Click(object sender, EventArgs e)
         {
-            if (txtUsername.Text == "" && txtPassword.Text == "" && txtComPassword.Text == "")
+            int result = UserService.AddUser(txtUsername.Text, txtPassword.Text, txtComPassword.Text);
+            if (result == 1)
             {
-                MessageBox.Show("Username and Password fields are empty", "Sign Up failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error 1: Username and Password fields are empty", "Sign Up failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else if (txtPassword.Text == txtComPassword.Text)
+
+            else if (result == 2)
             {
-                // connection.Open();
-                //string register = "INSERT INTO users VALUES ('" + txtUsername + "', '" + txtPassword + "')";
-                //command = new SqlCommand(register, connection);
-                //command.ExecuteNonQuery();
-                //connection.Close();
+                MessageBox.Show("Error 2: Passwords do not match", "Registration Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtPassword.Text = "";
+                txtComPassword.Text = "";
+                txtPassword.Focus();
+            }
 
-                UserModel user = new UserModel();
-                user.Username = txtUsername.Text;
-                user.Password = txtPassword.Text;
-                UserService.AddUser(user);
+            else if (result == 3)
+            {
+                MessageBox.Show("Error 3: User already exists", "Registration Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtPassword.Text = "";
+                txtComPassword.Text = "";
+                txtPassword.Focus();
+            }
 
-
-
+            else
+            {
                 txtUsername.Text = "";
                 txtPassword.Text = "";
                 txtComPassword.Text = "";
 
                 MessageBox.Show("Your Account has been Successfully Created", "Registration Successfull",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                MessageBox.Show("Passwords do not match", "Registration Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtPassword.Text = "";
-                txtComPassword.Text = "";   
-                txtPassword.Focus();
             }
         }
 

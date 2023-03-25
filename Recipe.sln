@@ -5,7 +5,7 @@ VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Recipe", "Recipe.csproj", "{D1C74F18-BA52-4491-A4E1-8245345BB1FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeBookProject.Test", "..\RecipeBookProject.Test\RecipeBookProject.Test.csproj", "{A6D9B871-FC86-40A2-B3CE-43BCEEFF7B22}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeBookProject.Test", "..\RecipeBookProject.Test\RecipeBookProject.Test.csproj", "{2A66EA09-E2B8-4A97-A6A4-AB5E04912CDD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{D1C74F18-BA52-4491-A4E1-8245345BB1FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1C74F18-BA52-4491-A4E1-8245345BB1FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1C74F18-BA52-4491-A4E1-8245345BB1FA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A6D9B871-FC86-40A2-B3CE-43BCEEFF7B22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A6D9B871-FC86-40A2-B3CE-43BCEEFF7B22}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A6D9B871-FC86-40A2-B3CE-43BCEEFF7B22}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A6D9B871-FC86-40A2-B3CE-43BCEEFF7B22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A66EA09-E2B8-4A97-A6A4-AB5E04912CDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A66EA09-E2B8-4A97-A6A4-AB5E04912CDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A66EA09-E2B8-4A97-A6A4-AB5E04912CDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A66EA09-E2B8-4A97-A6A4-AB5E04912CDD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

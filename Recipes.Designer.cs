@@ -58,9 +58,9 @@
             // AccountUsername
             // 
             this.AccountUsername.AutoSize = true;
-            this.AccountUsername.Location = new System.Drawing.Point(357, 8);
+            this.AccountUsername.Location = new System.Drawing.Point(312, 6);
             this.AccountUsername.Name = "AccountUsername";
-            this.AccountUsername.Size = new System.Drawing.Size(50, 20);
+            this.AccountUsername.Size = new System.Drawing.Size(38, 15);
             this.AccountUsername.TabIndex = 1;
             this.AccountUsername.Text = "label3";
             // 
@@ -68,11 +68,10 @@
             // 
             this.tabPage3.Controls.Add(this.listBox1);
             this.tabPage3.Controls.Add(this.buttonRefresh);
-            this.tabPage3.Location = new System.Drawing.Point(4, 29);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tabPage3.Location = new System.Drawing.Point(4, 24);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage3.Size = new System.Drawing.Size(400, 722);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage3.Size = new System.Drawing.Size(349, 538);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Home";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -80,20 +79,18 @@
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 20;
-            this.listBox1.Location = new System.Drawing.Point(6, 45);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.listBox1.ItemHeight = 15;
+            this.listBox1.Location = new System.Drawing.Point(5, 34);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(388, 664);
+            this.listBox1.Size = new System.Drawing.Size(340, 499);
             this.listBox1.TabIndex = 2;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged_1);
             // 
             // buttonRefresh
             // 
-            this.buttonRefresh.Location = new System.Drawing.Point(306, 9);
-            this.buttonRefresh.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.buttonRefresh.Location = new System.Drawing.Point(268, 7);
             this.buttonRefresh.Name = "buttonRefresh";
-            this.buttonRefresh.Size = new System.Drawing.Size(86, 31);
+            this.buttonRefresh.Size = new System.Drawing.Size(75, 23);
             this.buttonRefresh.TabIndex = 1;
             this.buttonRefresh.Text = "Refresh";
             this.buttonRefresh.UseVisualStyleBackColor = true;
@@ -109,11 +106,10 @@
             this.tabPage2.Controls.Add(this.label2);
             this.tabPage2.Controls.Add(this.btnPublish);
             this.tabPage2.Controls.Add(this.label1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 29);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tabPage2.Location = new System.Drawing.Point(4, 24);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage2.Size = new System.Drawing.Size(400, 722);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage2.Size = new System.Drawing.Size(349, 538);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Add Recipe";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -121,38 +117,35 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(360, 51);
+            this.label4.Location = new System.Drawing.Point(315, 38);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(34, 20);
+            this.label4.Size = new System.Drawing.Size(28, 15);
             this.label4.TabIndex = 7;
             this.label4.Text = "min";
             // 
             // TimeRequired
             // 
-            this.TimeRequired.Location = new System.Drawing.Point(274, 37);
-            this.TimeRequired.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.TimeRequired.Location = new System.Drawing.Point(240, 28);
             this.TimeRequired.Multiline = true;
             this.TimeRequired.Name = "TimeRequired";
-            this.TimeRequired.Size = new System.Drawing.Size(84, 32);
+            this.TimeRequired.Size = new System.Drawing.Size(74, 25);
             this.TimeRequired.TabIndex = 6;
             // 
             // Instructions
             // 
             this.Instructions.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Instructions.Location = new System.Drawing.Point(21, 108);
-            this.Instructions.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Instructions.Location = new System.Drawing.Point(18, 81);
             this.Instructions.Multiline = true;
             this.Instructions.Name = "Instructions";
-            this.Instructions.Size = new System.Drawing.Size(358, 533);
+            this.Instructions.Size = new System.Drawing.Size(314, 401);
             this.Instructions.TabIndex = 1;
             // 
             // RecipeTitle
             // 
             this.RecipeTitle.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.RecipeTitle.Location = new System.Drawing.Point(21, 37);
-            this.RecipeTitle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.RecipeTitle.Location = new System.Drawing.Point(18, 28);
             this.RecipeTitle.Name = "RecipeTitle";
-            this.RecipeTitle.Size = new System.Drawing.Size(238, 29);
+            this.RecipeTitle.Size = new System.Drawing.Size(209, 25);
             this.RecipeTitle.TabIndex = 0;
             // 
             // label3
@@ -161,9 +154,9 @@
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.label3.Location = new System.Drawing.Point(274, 13);
+            this.label3.Location = new System.Drawing.Point(240, 10);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(122, 20);
+            this.label3.Size = new System.Drawing.Size(99, 15);
             this.label3.TabIndex = 5;
             this.label3.Text = "Time Required:";
             // 
@@ -172,9 +165,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.label2.Location = new System.Drawing.Point(21, 84);
+            this.label2.Location = new System.Drawing.Point(18, 63);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 20);
+            this.label2.Size = new System.Drawing.Size(84, 15);
             this.label2.TabIndex = 4;
             this.label2.Text = "Instructions:";
             // 
@@ -184,22 +177,22 @@
             this.btnPublish.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPublish.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnPublish.ForeColor = System.Drawing.Color.White;
-            this.btnPublish.Location = new System.Drawing.Point(138, 651);
-            this.btnPublish.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnPublish.Location = new System.Drawing.Point(121, 488);
             this.btnPublish.Name = "btnPublish";
-            this.btnPublish.Size = new System.Drawing.Size(121, 43);
+            this.btnPublish.Size = new System.Drawing.Size(106, 32);
             this.btnPublish.TabIndex = 3;
             this.btnPublish.Text = "Publish";
             this.btnPublish.UseVisualStyleBackColor = false;
+            this.btnPublish.Click += new System.EventHandler(this.btnPublish_Click_1);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.label1.Location = new System.Drawing.Point(21, 13);
+            this.label1.Location = new System.Drawing.Point(18, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 20);
+            this.label1.Size = new System.Drawing.Size(82, 15);
             this.label1.TabIndex = 2;
             this.label1.Text = "Recipe Title:";
             // 
@@ -208,20 +201,18 @@
             this.tabControl2.Controls.Add(this.tabPage2);
             this.tabControl2.Controls.Add(this.tabPage3);
             this.tabControl2.Location = new System.Drawing.Point(0, 0);
-            this.tabControl2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(408, 755);
+            this.tabControl2.Size = new System.Drawing.Size(357, 566);
             this.tabControl2.TabIndex = 0;
             // 
             // Recipes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(413, 759);
+            this.ClientSize = new System.Drawing.Size(361, 569);
             this.Controls.Add(this.AccountUsername);
             this.Controls.Add(this.tabControl2);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Recipes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Recipes";

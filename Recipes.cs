@@ -98,18 +98,19 @@ namespace Recipe
 
         }
 
-        private void btnPublish_Click(object sender, EventArgs e)
+        private void btnPublish_Click_1(object sender, EventArgs e)
         {
-            RecipeModel recipe = new RecipeModel();
-            recipe.Name = RecipeTitle.Text;
-            recipe.TimeRequired = int.Parse(TimeRequired.Text);
-            recipe.Instructions = Instructions.Text;
-            recipe.Author = AccountUsername.Text;
-            RecipeService.Add(recipe);
-
-            RecipeTitle.Text = "";
-            Instructions.Text = "";
-            TimeRequired.Text = "";
+            bool result = RecipeService.Add(RecipeTitle.Text, TimeRequired.Text, AccountUsername.Text, Instructions.Text);
+            if (result == false)
+            {
+                MessageBox.Show("Time Required must be a whole number", "Format Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                RecipeTitle.Text = "";
+                Instructions.Text = "";
+                TimeRequired.Text = "";
+            }
         }
 
 

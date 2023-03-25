@@ -26,9 +26,24 @@ namespace Recipe.Data
 
         }
 
-        public static void Add(RecipeModel recipe)
+        public static bool Add(string name, string timeRequired, string author, string instructions)
         {
-            Session.recipeRepo.Add(recipe);
+            int timeRequiredInt;
+            bool result = int.TryParse(timeRequired, out timeRequiredInt);
+            if (result == true)
+            {
+                RecipeModel recipe = new RecipeModel();
+                recipe.Name = name;
+                recipe.TimeRequired = timeRequiredInt;
+                recipe.Instructions = instructions;
+                recipe.Author = author;
+                Session.recipeRepo.Add(recipe);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public static void Delete(int id)

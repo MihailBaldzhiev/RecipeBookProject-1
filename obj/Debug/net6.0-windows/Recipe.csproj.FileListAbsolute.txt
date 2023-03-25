@@ -72,8 +72,6 @@ C:\Users\Birb\Source\Repos\RecipeBookProject-1\bin\Debug\net6.0-windows\ADO.Net.
 C:\Users\Birb\Source\Repos\RecipeBookProject-1\bin\Debug\net6.0-windows\ADO.Net.Client.Core.dll
 C:\Users\Birb\Source\Repos\RecipeBookProject-1\bin\Debug\net6.0-windows\ADO.Net.Client.Implementation.dll
 C:\Users\Birb\Source\Repos\RecipeBookProject-1\obj\Debug\net6.0-windows\Recipe.csproj.AssemblyReference.cache
-C:\Users\Birb\Source\Repos\RecipeBookProject-1\obj\Debug\net6.0-windows\Recipe.frmLogin.resources
-C:\Users\Birb\Source\Repos\RecipeBookProject-1\obj\Debug\net6.0-windows\Recipe.frmRegister.resources
 C:\Users\Birb\Source\Repos\RecipeBookProject-1\obj\Debug\net6.0-windows\Recipe.Properties.Resources.resources
 C:\Users\Birb\Source\Repos\RecipeBookProject-1\obj\Debug\net6.0-windows\Recipe.Recipes.resources
 C:\Users\Birb\Source\Repos\RecipeBookProject-1\obj\Debug\net6.0-windows\Recipe.csproj.GenerateResource.cache
@@ -235,3 +233,5 @@ C:\Users\Elena\Source\Repos\RecipeBookProject-1\obj\Debug\net6.0-windows\Recipe.
 C:\Users\Elena\Source\Repos\RecipeBookProject-1\obj\Debug\net6.0-windows\ref\Recipe.dll
 C:\Users\Elena\source\repos\RecipeBookProject-1\obj\Debug\net6.0-windows\Recipe.Login.resources
 C:\Users\Elena\source\repos\RecipeBookProject-1\obj\Debug\net6.0-windows\Recipe.Register.resources
+C:\Users\Birb\Source\Repos\RecipeBookProject-1\obj\Debug\net6.0-windows\Recipe.Login.resources
+C:\Users\Birb\Source\Repos\RecipeBookProject-1\obj\Debug\net6.0-windows\Recipe.Register.resources

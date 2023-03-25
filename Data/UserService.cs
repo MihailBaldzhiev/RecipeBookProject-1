@@ -40,9 +40,34 @@ namespace Recipe.Data
 
         }
 
-        public static void AddUser(UserModel user)
+        public static int AddUser(string username, string password, string confirmPassword)
         {
-            Session.userRepo.AddUser(user);
+            List<UserModel> users = new List<UserModel>();
+            users = GetAll();
+
+            UserModel user = new UserModel();
+            user.Username = username;
+            user.Password = password;
+
+            if (username == "" || password == "" || confirmPassword == "")
+            {
+                return 1;
+            }
+            else if (password != confirmPassword)
+            {
+                return 2;
+            }
+
+            else if (users.Any(a => a.Username == username))
+            {
+                return 3;
+            }
+
+            else
+            {
+                Session.userRepo.AddUser(user);
+                return 0;
+            }
         }
 
         public static void DeleteUser(int id)
