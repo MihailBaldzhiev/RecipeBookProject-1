@@ -160,8 +160,6 @@ C:\Users\Nikolay\Source\Repos\RecipeBookProject-1\bin\Debug\net6.0-windows\runti
 C:\Users\Nikolay\Source\Repos\RecipeBookProject-1\bin\Debug\net6.0-windows\runtimes\win-x64\native\krbcc64.dll
 C:\Users\Nikolay\Source\Repos\RecipeBookProject-1\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 C:\Users\Nikolay\Source\Repos\RecipeBookProject-1\obj\Debug\net6.0-windows\Recipe.csproj.AssemblyReference.cache
-C:\Users\Nikolay\Source\Repos\RecipeBookProject-1\obj\Debug\net6.0-windows\Recipe.frmLogin.resources
-C:\Users\Nikolay\Source\Repos\RecipeBookProject-1\obj\Debug\net6.0-windows\Recipe.frmRegister.resources
 C:\Users\Nikolay\Source\Repos\RecipeBookProject-1\obj\Debug\net6.0-windows\Recipe.Properties.Resources.resources
 C:\Users\Nikolay\Source\Repos\RecipeBookProject-1\obj\Debug\net6.0-windows\Recipe.Recipes.resources
 C:\Users\Nikolay\Source\Repos\RecipeBookProject-1\obj\Debug\net6.0-windows\Recipe.csproj.GenerateResource.cache
@@ -235,3 +233,5 @@ C:\Users\Elena\source\repos\RecipeBookProject-1\obj\Debug\net6.0-windows\Recipe.
 C:\Users\Elena\source\repos\RecipeBookProject-1\obj\Debug\net6.0-windows\Recipe.Register.resources
 C:\Users\Birb\Source\Repos\RecipeBookProject-1\obj\Debug\net6.0-windows\Recipe.Login.resources
 C:\Users\Birb\Source\Repos\RecipeBookProject-1\obj\Debug\net6.0-windows\Recipe.Register.resources
+C:\Users\Nikolay\Source\Repos\RecipeBookProject-1\obj\Debug\net6.0-windows\Recipe.Login.resources
+C:\Users\Nikolay\Source\Repos\RecipeBookProject-1\obj\Debug\net6.0-windows\Recipe.Register.resources
