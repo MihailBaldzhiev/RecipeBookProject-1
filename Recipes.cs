@@ -20,8 +20,6 @@ namespace Recipe
     {
         private Dictionary<string, string> recipeData = new Dictionary<string, string>();
         private Panel recipePanel;
-
-       
         public Recipes(string username)
         {
             InitializeComponent();
@@ -37,6 +35,7 @@ namespace Recipe
             AccountUsername.Text = username;
             // Add the Panel to the first TabPage
             tabPage2.Controls.Add(recipePanel);
+            Refresh();
         }
 
         private void tabPage1_Click(object sender, EventArgs e)
@@ -65,7 +64,7 @@ namespace Recipe
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -111,6 +110,7 @@ namespace Recipe
                 Instructions.Text = "";
                 TimeRequired.Text = "";
             }
+            Refresh();
         }
 
 
@@ -148,15 +148,11 @@ namespace Recipe
                     listBox1.Items.Add(item.Name);
                 }
             }
-            //listBox1.SelectedItem = recipes;
-
-
-
 
             RecipeModel selectedRecipe = RecipeService.Get(recipeName);
             Form popupForm = new Form();
             popupForm.Text = "Recipe Details";
-            popupForm.Size = new Size(400, 400);
+            popupForm.Size = new Size(400, 430);
             popupForm.StartPosition = FormStartPosition.CenterParent;
 
             Label titleLabel = new Label();
@@ -193,7 +189,6 @@ namespace Recipe
             ingredientsBox.Size = new Size(360, 280);
             ingredientsBox.Text = selectedRecipe.Instructions;
 
-
             popupForm.Controls.Add(titleLabel);
             popupForm.Controls.Add(titleValueLabel);
             popupForm.Controls.Add(ingredientsLabel);
@@ -201,7 +196,52 @@ namespace Recipe
             popupForm.Controls.Add(timeRequiredLabel);
             popupForm.Controls.Add(timeRequiredValueLabel);
 
-            popupForm.Show();
+            if (AccountUsername.Text == "admin" || AccountUsername.Text == selectedRecipe.Author)
+            {
+                Button deleteRecipeButton = new Button();
+                deleteRecipeButton.Text = "Delete Recipe";
+                deleteRecipeButton.AutoSize = true;
+                deleteRecipeButton.Location = new Point(150, 358);
+                deleteRecipeButton.Click += DeleteRecipeButton_Click;
+                popupForm.Controls.Add(deleteRecipeButton);
+                popupForm.Show();
+            }
+            else
+            {
+                popupForm.Show();
+            }
+        }
+
+        private void DeleteRecipeButton_Click(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+            Form form = button.FindForm();
+            Label recipeLabel = (Label)form.Controls[1];
+            RecipeModel recipe = RecipeService.Get(recipeLabel.Text);
+            RecipeService.Delete(recipe.Id);
+            form.Close();
+            Refresh();
+        }
+
+        private void Refresh()
+        {
+            var recipes = RecipeService.GetAll();
+            if (recipes == null)
+            {
+                listBox1.Items.Add("No recipes.");
+            }
+            else
+            {
+                listBox1.Items.Clear();
+                foreach (var item in recipes)
+                {
+                    listBox1.Items.Add(item.Name);
+                }
+            }
+        }
+
+        private void AccountUsername_Click(object sender, EventArgs e)
+        {
         }
     }
 }

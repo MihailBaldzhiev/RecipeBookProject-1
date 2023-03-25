@@ -45,7 +45,7 @@
             label6.AutoSize = true;
             label6.Cursor = Cursors.Hand;
             label6.ForeColor = Color.FromArgb(0, 192, 192);
-            label6.Location = new Point(68, 444);
+            label6.Location = new Point(94, 444);
             label6.Name = "label6";
             label6.Size = new Size(101, 17);
             label6.TabIndex = 20;
@@ -56,7 +56,7 @@
             // 
             label5.AutoSize = true;
             label5.ForeColor = SystemColors.ButtonShadow;
-            label5.Location = new Point(47, 420);
+            label5.Location = new Point(73, 420);
             label5.Name = "label5";
             label5.Size = new Size(150, 17);
             label5.TabIndex = 21;
@@ -153,13 +153,13 @@
             label1.AutoSize = true;
             label1.Font = new Font("MS UI Gothic", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.FromArgb(0, 192, 192);
-            label1.Location = new Point(91, 79);
+            label1.Location = new Point(104, 73);
             label1.Name = "label1";
             label1.Size = new Size(78, 27);
             label1.TabIndex = 10;
             label1.Text = "Login";
             // 
-            // frmLogin
+            // Login
             // 
             AutoScaleDimensions = new SizeF(8F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -178,7 +178,7 @@
             Font = new Font("Nirmala UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             ForeColor = Color.FromArgb(164, 165, 169);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "frmLogin";
+            Name = "Login";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "frmLogin";
             Load += frmLogin_Load_1;
