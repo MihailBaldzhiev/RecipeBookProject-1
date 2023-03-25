@@ -10,19 +10,20 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using Recipe.Models;
 using Recipe.Data;
+using MySqlX.XDevAPI;
+using Recipe.Utils;
+using Session = Recipe.Utils.Session;
 
 namespace Recipe
 {
-    public partial class frmRegister : Form
+    public partial class Register : Form
     {
         //SqlConnection connection = new SqlConnection("database = RecipeDB");
         //SqlCommand command = new SqlCommand();
         //SqlDataAdapter data = new SqlDataAdapter();
 
-        private static UserContext userContext = new UserContext();
-        UserLogic userLogic = new UserLogic(userContext);
 
-        public frmRegister()
+        public Register()
         {
             InitializeComponent();
         }
@@ -49,7 +50,7 @@ namespace Recipe
                 UserModel user = new UserModel();
                 user.Username = txtUsername.Text;
                 user.Password = txtPassword.Text;
-                userLogic.AddUser(user);
+                UserService.AddUser(user);
 
 
 
@@ -86,7 +87,7 @@ namespace Recipe
 
         private void label6_Click(object sender, EventArgs e)
         {
-            new frmLogin().Show();
+            new Login().Show();
             this.Hide();
 
         }

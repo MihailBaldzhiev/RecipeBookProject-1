@@ -1,6 +1,6 @@
 ﻿namespace Recipe
 {
-    partial class frmLogin
+    partial class Login
     {
         /// <summary>
         /// Required designer variable.

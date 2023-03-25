@@ -1,6 +1,6 @@
 ﻿namespace Recipe
 {
-    partial class frmRegister
+    partial class Register
     {
         /// <summary>
         /// Required designer variable.

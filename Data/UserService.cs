@@ -1,24 +1,21 @@
 ﻿using System;
 using Recipe.Models;
 using Recipe.Data;
+using Recipe.Utils;
+using System.Linq;
+using Recipe.Repositories;
 
 namespace Recipe.Data
 {
-    public class UserLogic
+    public static class UserService
     {
-        private UserContext userContext;
 
-        public UserLogic(UserContext userContext)
+        private static List<UserModel> GetAll()
         {
-            this.userContext = userContext;
+            return Session.userRepo.GetAll();
         }
 
-        private List<UserModel> GetAll()
-        {
-            return userContext.Users.ToList();
-        }
-
-        public bool CheckIfExists(string username, string password)
+        public static bool CheckIfExists(string username, string password)
         {
             List<UserModel> users = new List<UserModel>();
             users = GetAll();
@@ -43,19 +40,17 @@ namespace Recipe.Data
 
         }
 
-        public void AddUser(UserModel user)
+        public static void AddUser(UserModel user)
         {
-            userContext.Users.Add(user);
-            userContext.SaveChanges();
+            Session.userRepo.AddUser(user);
         }
 
-        public void DeleteUser(int id)
+        public static void DeleteUser(int id)
         {
-            var item = userContext.Users.Find(id);
+            var item = Session.userRepo.Find(id);
             if (item != null)
             {
-                userContext.Users.Remove(item);
-                userContext.SaveChanges();
+                Session.userRepo.DeleteUser(item);
             }
         }
     }

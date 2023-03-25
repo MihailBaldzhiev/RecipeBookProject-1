@@ -13,17 +13,16 @@ using Recipe.Data;
 
 namespace Recipe
 {
-    public partial class frmLogin : Form
+    public partial class Login : Form
     {
         //SqlConnection connection = new SqlConnection("database = RecipeDB");
         //SqlCommand command = new SqlCommand();
         //SqlDataAdapter data = new SqlDataAdapter();
 
-        private static UserContext userContext = new UserContext();
-        UserLogic userLogic = new UserLogic(userContext);
+        private static RecipeContext _recipeContext = new RecipeContext();
         public string Username { get; set; }
 
-        public frmLogin()
+        public Login()
         {
             InitializeComponent();
         }
@@ -81,7 +80,7 @@ namespace Recipe
             //command = new SqlCommand(login, connection);
             //SqlDataReader dataReader = command.ExecuteReader();
 
-            bool success = userLogic.CheckIfExists(txtUsername.Text, txtPassword.Text);
+            bool success = UserService.CheckIfExists(txtUsername.Text, txtPassword.Text);
 
 
             if (success == true)
@@ -117,7 +116,7 @@ namespace Recipe
 
         private void label6_Click_1(object sender, EventArgs e)
         {
-            new frmRegister().Show();
+            new Register().Show();
             this.Hide();
         }
 

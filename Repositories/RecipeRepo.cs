@@ -1,14 +1,19 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using Recipe.Models;
 using Recipe.Data;
 
-namespace Recipe.Data
+namespace Recipe.Repositories
 {
-    public class RecipeLogic
+    public class RecipeRepo
+
     {
         private RecipeContext recipeContext;
 
-        public RecipeLogic(RecipeContext recipeContext)
+        public RecipeRepo(RecipeContext recipeContext)
         {
             this.recipeContext = recipeContext;
         }
@@ -21,10 +26,6 @@ namespace Recipe.Data
         public RecipeModel Get(string text)
         {
             RecipeModel result = GetAll().Find(x => x.Name.Contains(text));
-            if (result == null)
-            {
-                throw new ArgumentNullException();
-            }
             return result;
 
         }
@@ -38,11 +39,14 @@ namespace Recipe.Data
         public void Delete(int id)
         {
             var item = recipeContext.Recipes.Find(id);
-            if (item != null)
-            {
-                recipeContext.Recipes.Remove(item);
-                recipeContext.SaveChanges();
-            }
+            recipeContext.Recipes.Remove(item);
+            recipeContext.SaveChanges();
+            
+        }
+
+        public RecipeModel Find(int id)
+        {
+            return recipeContext.Recipes.Find(id);
         }
     }
 }
